@@ -1,0 +1,29 @@
+name: PublicFarm
+main: com.khorium.publicfarm.PublicFarm
+version: 1.0
+author: Khorium
+
+description: AutoPlant Public Farm plugin
+
+commands:
+    pf:
+        description: PublicFarm command
+        usage: /pf
+    publicfarm:
+        description: same as /pf
+        usage: /publicfarm
+
+permissions:
+    publicfarm.manage.*:
+        description: Allow somebody manage all the publicfarm
+        default: op
+        children:
+          publicfarm.manage.set: true
+          publicfarm.manage.list: true
+          publicfarm.manage.delete: true
+    publicfarm.reload:
+        description: Reload plugin configuration
+        default: op
+    publicfarm.use:
+        description: Allow a player harvest from public farm
+        default: true
