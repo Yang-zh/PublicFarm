@@ -53,15 +53,10 @@
 	sql为false时使用插件数据文件夹下数据库，默认数据库名：farms.db
 	
     mysql: false
-    
     host: localhost
-    
     port: 3306
-    
     database: publicfarm
-    
     user: root
-    
     password: passwd
     
 
@@ -74,9 +69,9 @@
 
 	管理员输入指令后，点击一个区域对角的两个方块，即可完成自动补种区域的设置。输入的指令需要包括<区域名称> <农作物类型>
 	
-  /pf set <name> <type>  
-  
-  (type: POTATO,CARROT,WHEAT,NETHER_WARTS)
+	/pf set <name> <type>  
+	  
+	(type: POTATO,CARROT,WHEAT,NETHER_WARTS)
   
 	划定区域所选两点需在同一水平面上，种植范围也仅限该水平面。
 	
